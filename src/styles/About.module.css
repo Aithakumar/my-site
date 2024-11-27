@@ -1,0 +1,31 @@
+/* styles/About.module.css */
+
+.container {
+  padding: 50px;
+  background-color: #131111;
+  animation: slideUp 1s ease-out;
+}
+
+.header {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Animation for sliding effect */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

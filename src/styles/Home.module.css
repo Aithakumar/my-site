@@ -1,0 +1,68 @@
+/* styles/Home.module.css */
+
+.container {
+  text-align: center;
+  padding: 80px;
+  background-color: #100f0f;
+}
+
+.header {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profession {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.link {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #0070f3;
+  position: relative;
+}
+
+.link:hover {
+  color: #ff5722;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff5722;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Animation for fadeIn effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
